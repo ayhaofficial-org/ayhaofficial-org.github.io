@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 <title>African Youths Humanitarian Association</title>
-                  AYHA
 
 <!-- SEO -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,6 @@
 <meta name="keywords" content="African Youths Humanitarian Association, AYHA, African Youths, Youths Empowerment, Humanitarian, Charity, NGO Africa">
 <meta name="author" content="African Youths Humanitarian Association">
 <meta name="robots" content="index, follow">
-
-<!-- Replace with your real domain later -->
-<link rel="canonical" href="https://your-domain.com/">
 
 <style>
 body {
@@ -23,14 +19,6 @@ margin: 40px auto;
 padding: 0 20px;
 background: #f7f7f7;
 line-height: 1.6;
-}
-
-header {
-background: #003366;
-color: white;
-padding: 25px;
-border-radius: 8px 8px 0 0;
-text-align: center;
 }
 
 nav {
@@ -72,6 +60,13 @@ width: 100%;
 padding: 8px 10px;
 border-radius: 4px;
 border: 1px solid #ccc;
+box-sizing: border-box;
+font-size: 14px;
+}
+
+textarea {
+min-height: 100px;
+resize: vertical;
 }
 
 button {
@@ -81,14 +76,10 @@ color: white;
 border: none;
 border-radius: 4px;
 cursor: pointer;
+font-size: 15px;
 }
 
 button:hover { opacity: 0.9; }
-
-.small-note {
-font-size: 12px;
-color: #555;
-}
 
 .empty-gallery-box {
 width: 100%;
@@ -99,15 +90,31 @@ text-align: center;
 color: #777;
 font-size: 14px;
 }
+
+.small-note {
+font-size: 12px;
+color: #666;
+}
 </style>
 
 </head>
 <body>
 
-<!-- HEADER (NO LOGO) -->
-<header id="top">
-<h1>African Youths Humanitarian Association</h1>
-<p>Empowering Youths • Building Communities • Creating Impact</p>
+<!-- HEADER (UPDATED WITH RED “AYHA”) -->
+<header id="top" style="text-align:center; background:#003366; color:white; padding:35px 20px; border-radius:8px 8px 0 0;">
+
+<h1 style="margin:0; font-size:34px; font-weight:bold;">
+African Youths Humanitarian Association
+</h1>
+
+<h2 style="margin:6px 0 0 0; font-size:32px; font-weight:900; color:#ff4d4d; letter-spacing:2px;">
+AYHA
+</h2>
+
+<p style="margin-top:10px; font-size:16px; color:#e6e6e6;">
+Empowering Youths • Building Communities • Creating Impact
+</p>
+
 </header>
 
 <!-- NAVIGATION -->
@@ -123,7 +130,7 @@ font-size: 14px;
 <a href="#contact-last">Contact</a>
 </nav>
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION -->
 <div class="card" id="about">
 <h2>Welcome to AYHA</h2>
 <p>
@@ -132,13 +139,13 @@ dedicated to empowering African youths and assisting vulnerable communities acro
 </p>
 </div>
 
-<!-- MISSION + CONTACT SECTION #1 -->
+<!-- MISSION + CONTACT #1 -->
 <div class="two-column">
 <div class="card">
 <h2>Our Mission</h2>
 <p>
-To support African youths with education, resources, leadership development and humanitarian assistance
-while promoting unity and progress across the continent.
+To support African youths with education, leadership training, community development,
+and humanitarian assistance across the continent.
 </p>
 
 <ul>
@@ -151,34 +158,37 @@ while promoting unity and progress across the continent.
 
 <div class="card" id="contact">
 <h2>Contact Us</h2>
-<p><strong>Email:</strong> ayhassociation@gmail.com</p>
+
+<p><strong>Main Email (General + PayPal):</strong> ayhassociation@gmail.com</p>
+<p><strong>Applications Email:</strong> ayhainfo.org@gmail.com</p>
 <p><strong>Phone / WhatsApp:</strong> +39 351 077 2822</p>
 
 <h3>Head Office</h3>
 <p>African Youths Humanitarian Association<br>(City, Country)</p>
 
-<p class="small-note">Another full Contact section appears at the bottom.</p>
+<p class="small-note">
+A full Contact section is also available at the bottom of the site.
+</p>
 </div>
 </div>
 
-<!-- GALLERY (EMPTY) -->
+<!-- GALLERY SECTION -->
 <div class="card" id="projects">
 <h2>Gallery</h2>
-<p>You can upload your own images later. All images have been removed.</p>
+<p>You can upload your own images here. All images have been removed.</p>
 
 <div class="empty-gallery-box">
-<p>📁 Your gallery is empty.</p>
-<p>You may add photos here manually.</p>
+<p>📁 Your gallery is currently empty.</p>
+<p>You may add pictures manually here.</p>
 </div>
 </div>
 
 <!-- APPOINTMENT FORM -->
 <div class="card" id="appointment">
 <h2>Book an Appointment</h2>
-<p>This form sends to: <strong>ayhassociation@gmail.com</strong></p>
+<p>This form sends to: <strong>ayhainfo.org@gmail.com</strong></p>
 
-<form action="mailto:ayhassociation@gmail.com" method="POST" enctype="text/plain">
-
+<form action="mailto:ayhainfo.org@gmail.com" method="POST" enctype="text/plain">
 <input type="hidden" name="Subject" value="New AYHA Appointment Request">
 
 <label>Full Name *</label>
@@ -229,25 +239,26 @@ while promoting unity and progress across the continent.
 </select>
 
 <button type="submit">Request Appointment</button>
+<p class="small-note">Your email app will open to send this message.</p>
 </form>
 </div>
 
-<!-- MEMBERSHIP FORM -->
+  <!-- MEMBERSHIP APPLICATION FORM -->
 <div class="card" id="membership">
 <h2>Membership Application Form</h2>
+<p>This form sends to: <strong>ayhainfo.org@gmail.com</strong></p>
 
-<form action="mailto:ayhassociation@gmail.com" method="POST" enctype="text/plain">
-
+<form action="mailto:ayhainfo.org@gmail.com" method="POST" enctype="text/plain">
 <input type="hidden" name="Subject" value="New AYHA Membership Application">
 
 <label>Full Name *</label>
 <input type="text" name="Full Name" required>
 
-<label>Email *</label>
+<label>Email Address *</label>
 <input type="email" name="Email" required>
 
-<label>Phone</label>
-<input type="tel" name="Phone">
+<label>Phone / WhatsApp *</label>
+<input type="tel" name="Phone" required>
 
 <label>Country *</label>
 <input type="text" name="Country" required>
@@ -261,88 +272,132 @@ while promoting unity and progress across the continent.
 <option value="31+">31+</option>
 </select>
 
-<label>Occupation</label>
+<label>Occupation / Field of Study</label>
 <input type="text" name="Occupation">
 
 <label>Areas of Interest *</label>
-<textarea name="Areas of Interest" required></textarea>
+<textarea name="Areas of Interest"
+placeholder="Example: Youths leadership, humanitarian outreach, education projects..."
+required></textarea>
 
-<label>Experience</label>
-<textarea name="Experience"></textarea>
+<label>Relevant Experience (optional)</label>
+<textarea name="Experience"
+placeholder="Share any volunteering, leadership, or community work experience you have."></textarea>
 
-<label>Motivation *</label>
+<label>Why do you want to join AYHA? *</label>
 <textarea name="Motivation" required></textarea>
 
 <label>
-<input type="checkbox" required> I confirm the information is accurate.
+<input type="checkbox" name="Agreement" required>
+I confirm that the information provided is accurate and I agree to follow AYHA policies and values.
 </label>
 
-<button type="submit">Submit Membership Application</button>
+<button type="submit">Submit Application</button>
+<p class="small-note">Your email app will open to send this message.</p>
 </form>
 </div>
 
-<!-- SOCIAL MEDIA -->
+<!-- SOCIAL MEDIA SECTION -->
 <div class="card" id="socials">
 <h2>Follow Us on Social Media</h2>
+<p>Stay connected with the African Youths Humanitarian Association (AYHA)
+for updates, outreach, youth empowerment, and humanitarian activities.</p>
+
 <ul>
-<li><strong>Facebook:</strong> <a target="_blank" href="https://www.facebook.com/share/17tUuRzzjs/?mibextid=wwXIfr">Facebook Page</a></li>
-<li><strong>YouTube:</strong> <a target="_blank" href="https://youtube.com/@africayouth2024?si=VWId15UWjY1EnNd-">YouTube Channel</a></li>
-<li><strong>TikTok:</strong> <a target="_blank" href="https://www.tiktok.com/@africayouthshumanitaian?_r=1&_t=ZN-91nchJHDb1y">TikTok</a></li>
+<li><strong>Facebook:</strong>
+<a href="https://www.facebook.com/share/17tUuRzzjs/?mibextid=wwXIfr" target="_blank">
+Visit our Facebook Page</a>
+</li>
+
+<li><strong>YouTube:</strong>
+<a href="https://youtube.com/@africayouth2024?si=VWId15UWjY1EnNd-" target="_blank">
+Visit our YouTube Channel</a>
+</li>
+
+<li><strong>TikTok:</strong>
+<a href="https://www.tiktok.com/@africayouthshumanitaian" target="_blank">
+Follow us on TikTok</a>
+</li>
+
+<li><strong>Instagram:</strong> Coming soon</li>
+<li><strong>Twitter (X):</strong> Coming soon</li>
+<li><strong>WhatsApp:</strong> Coming soon</li>
+<li><strong>Supfrica:</strong> Coming soon</li>
 </ul>
+
+<p class="small-note">More platforms will be added as they become available.</p>
 </div>
 
-
-<!-- DONATE (SECOND TO LAST) -->
+<!-- DONATION SECTION (SECOND TO LAST) -->
 <div class="card" id="donate">
 <h2>Donate to Support AYHA</h2>
-<p>Your support helps us empower African youths and communities.</p>
+<p>Your support helps AYHA empower African youths and assist vulnerable communities.</p>
 
+<div class="donate-method">
 <h3>Bank Transfer</h3>
 <p>
 <strong>Account Name:</strong> African Youths Humanitarian Association<br>
 <strong>Bank Name:</strong> Your Bank Name Here<br>
-<strong>Account Number:</strong> 000000000000<br>
-<strong>SWIFT/BIC:</strong> XXXXXXXX
-</p>
-
-<h3>Mobile Money</h3>
-<p>
-<strong>Provider:</strong> MTN / Airtel / etc.<br>
-<strong>Number:</strong> +000 000 000 000<br>
-<strong>Account Name:</strong> AYHA Treasurer
-</p>
-
-<h3>PayPal</h3>
-<p>
-<a href="https://paypal.me/ayhassociation" target="_blank">
-Donate via PayPal (ayhassociation@gmail.com)
-</a>
-</p>
-
-<h3>GoFundMe</h3>
-<p><a href="https://gofund.me/YourCampaignLink" target="_blank">GoFundMe Campaign</a></p>
-
-<h3>Western Union / MoneyGram</h3>
-<p>
-<strong>Receiver Name:</strong> Full Name<br>
-<strong>City / Country:</strong> Your City, Your Country
+<strong>Account Number / IBAN:</strong> 000000000000<br>
+<strong>SWIFT / BIC:</strong> XXXXXXXX
 </p>
 </div>
 
-<!-- CONTACT (LAST SECTION) -->
+<div class="donate-method">
+<h3>Mobile Money (MoMo)</h3>
+<p>
+<strong>Provider:</strong> MTN / Airtel / others<br>
+<strong>Number:</strong> +39 351 077 2822<br>
+<strong>Account Name:</strong> AYHA
+</p>
+</div>
+
+<div class="donate-method">
+<h3>PayPal</h3>
+<p>You can donate securely via PayPal:</p>
+<p>
+<a href="https://paypal.me/ayhassociation" target="_blank">https://paypal.me/ayhassociation</a>
+</p>
+<p class="small-note">This PayPal uses the email: ayhassociation@gmail.com</p>
+</div>
+
+<div class="donate-method">
+<h3>GoFundMe</h3>
+<p>
+<a href="#" target="_blank">GoFundMe Campaign (coming soon)</a>
+</p>
+</div>
+
+<div class="donate-method">
+<h3>Western Union / MoneyGram</h3>
+<p>
+<strong>Receiver Name:</strong> (Add your official receiver name)<br>
+<strong>City / Country:</strong> (Add your location)<br>
+<strong>Phone:</strong> +39 351 077 2822
+</p>
+</div>
+</div>
+
+  <!-- CONTACT SECTION (LAST SECTION OF THE WEBSITE) -->
 <div class="card" id="contact-last">
 <h2>Contact Us</h2>
 
-<p><strong>Email:</strong> ayhassociation@gmail.com</p>
+<p><strong>Main Email (General + PayPal):</strong> ayhassociation@gmail.com</p>
+<p><strong>Applications Email:</strong> ayhainfo.org@gmail.com</p>
 <p><strong>Phone / WhatsApp:</strong> +39 351 077 2822</p>
 
 <h3>Head Office</h3>
-<p>African Youths Humanitarian Association<br>(City, Country)</p>
+<p>
+African Youths Humanitarian Association<br>
+(City, Country)
+</p>
 
 <p class="small-note">
-This is the final section of the website. Thank you for visiting AYHA.
+This is the final section of the website.
+Thank you for visiting AYHA.
 </p>
 </div>
 
 </body>
 </html>
+
