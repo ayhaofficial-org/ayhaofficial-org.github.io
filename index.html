@@ -1,111 +1,469 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8" />
-
-  <title>African Youth Humanitarian Association</title>
-
-  <style>
-
-    body {
-
-      font-family: Arial, sans-serif;
-
-      max-width: 900px;
-
-      margin: 40px auto;
-
-      padding: 0 20px;
-
-      background: #f7f7f7;
-
-      line-height: 1.6;
-
-    }
-
-    header {
-
-      background: #003366;
-
-      color: white;
-
-      padding: 25px;
-
-      text-align: center;
-
-      border-radius: 8px;
-
-    }
-
-    .card {
-
-      background: white;
-
-      padding: 20px;
-
-      margin-top: 20px;
-
-      border-radius: 8px;
-
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-    }
-
-    h1, h2 {
-
-      margin: 0;
-
-      padding-bottom: 10px;
-
-    }
-
-  </style>
-
+<meta charset="UTF-8" />
+<title>African Youth Humanitarian Association</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+background: #f7f7f7;
+line-height: 1.6;
+}
+header {
+background: #003366;
+color: white;
+padding: 25px;
+text-align: center;
+border-radius: 8px 8px 0 0;
+}
+nav {
+background: #f0f0f0;
+padding: 10px 15px;
+border-radius: 0 0 8px 8px;
+text-align: center;
+}
+nav a {
+margin: 0 8px;
+text-decoration: none;
+color: #003366;
+font-weight: bold;
+font-size: 14px;
+}
+nav a:hover {
+text-decoration: underline;
+}
+.card {
+background: white;
+padding: 20px;
+margin-top: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+h1, h2, h3 {
+margin-top: 0;
+}
+.two-column {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 15px;
+margin-top: 10px;
+}
+.gallery img {
+width: 100%;
+border-radius: 8px;
+}
+form {
+display: grid;
+gap: 12px;
+}
+label {
+font-weight: bold;
+display: block;
+margin-bottom: 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+width: 100%;
+padding: 8px 10px;
+border-radius: 4px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+font-size: 14px;
+}
+textarea {
+min-height: 100px;
+resize: vertical;
+}
+.small-note {
+font-size: 12px;
+color: #666;
+}
+button[type="submit"] {
+padding: 10px 18px;
+border: none;
+border-radius: 4px;
+background: #003366;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+button[type="submit"]:hover {
+opacity: 0.9;
+}
+iframe {
+width: 100%;
+min-height: 280px;
+border-radius: 8px;
+border: none;
+}
+.donate-method {
+margin-bottom: 15px;
+}
+ul {
+padding-left: 18px;
+}
+</style>
 </head>
-
 <body>
+<header id="top">
+<h1>African Youth Humanitarian Association</h1>
+<p>Empowering Youth • Building Communities • Creating Impact</p>
+</header>
 
-  <header>
+<nav>
+<a href="#top">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#donate">Donate</a>
+<a href="#membership">Membership</a>
+<a href="#socials">Social Media</a>
+<a href="#qr">QR Code</a>
+<a href="#contact">Contact</a>
+<a href="verify.html">Verify Member ID</a>
+</nav>
 
-    <h1>African Youth Humanitarian Association</h1>
+<!-- About / Mission -->
+<div class="card" id="about">
+<h2>Welcome to AYHA</h2>
+<p>
+African Youth Humanitarian Association (AYHA) is a youth-led organization
+focused on empowering young people across Africa through education,
+leadership development, and community support initiatives.
+</p>
+</div>
 
-    <p>Empowering Youth • Building Communities • Creating Impact</p>
+<div class="two-column">
+<div class="card">
+<h2>Our Mission</h2>
+<p>
+To support African youths and vulnerable communities with resources,
+training, and opportunities to grow and thrive, while promoting
+humanitarian values and youth participation.
+</p>
 
-  </header>
+<h3>Our Focus Areas</h3>
+<ul>
+<li>Youth empowerment and leadership</li>
+<li>Education and skills development</li>
+<li>Community outreach and humanitarian support</li>
+<li>Advocacy for youth rights and inclusion</li>
+</ul>
+</div>
 
+<div class="card" id="contact">
+<h2>Contact Us</h2>
+<p>Email: <strong>youremail@example.com</strong></p>
+<p class="small-note">
+Replace this email with your official AYHA email address.
+</p>
 
+<h3>Head Office</h3>
+<p>
+African Youth Humanitarian Association<br />
+(Add your city, country here)
+</p>
+</div>
+</div>
 
-  <div class="card">
+<!-- Projects: Photos -->
+<div class="card" id="projects">
+<h2>Our Projects – Photos</h2>
+<p>
+Here are some highlights from our recent activities and community projects.
+</p>
 
-    <h2>Welcome to AYHA</h2>
+<div class="gallery">
+<!-- Replace the image file names with your real files in the "images" folder -->
+<img src="images/project1.jpg" alt="AYHA project 1">
+<img src="images/project2.jpg" alt="AYHA project 2">
+<img src="images/project3.jpg" alt="AYHA project 3">
+</div>
 
-    <p>We are a youth-led humanitarian organization focused on empowering young people across Africa through education, leadership development, and community support initiatives.</p>
+<p class="small-note">
+Upload your own photos into an <strong>images</strong> folder in this
+repository and update the file names above.
+</p>
+</div>
 
-  </div>
+<!-- Projects: Video -->
+<div class="card">
+<h2>Our Projects – Videos</h2>
+<p>
+Watch short videos from our outreach, trainings, and campaigns.
+</p>
 
+<!-- Replace VIDEO_ID_HERE with your real YouTube video ID if you want a specific video -->
+<iframe
+src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+title="AYHA project video"
+allowfullscreen>
+</iframe>
 
+<p class="small-note">
+Upload your video to YouTube, then replace <code>VIDEO_ID_HERE</code>
+with the ID from your YouTube link.
+</p>
+</div>
 
-  <div class="card">
+<!-- Donate -->
+<div class="card" id="donate">
+<h2>Donate to Support AYHA</h2>
+<p>
+Your support helps us provide education, humanitarian aid, youth empowerment training,
+and community development programs across Africa. Any contribution, big or small,
+makes a real difference.
+</p>
 
-    <h2>Our Mission</h2>
+<div class="donate-method">
+<h3>Bank Transfer</h3>
+<p>
+<strong>Account Name:</strong> African Youth Humanitarian Association<br>
+<strong>Bank Name:</strong> Your Bank Name Here<br>
+<strong>Account Number / IBAN:</strong> 000000000000<br>
+<strong>SWIFT / BIC:</strong> XXXXXXXX
+</p>
+</div>
 
-    <p>To support African youths and vulnerable communities with resources, training, and opportunities to grow and thrive.</p>
+<div class="donate-method">
+<h3>Mobile Money (MoMo)</h3>
+<p>
+<strong>Provider:</strong> MTN / Airtel / etc.<br>
+<strong>Number:</strong> +000 000 000 000<br>
+<strong>Account Name:</strong> AYHA / Your Treasurer Name
+</p>
+</div>
 
-  </div>
+<div class="donate-method">
+<h3>PayPal</h3>
+<p>You can donate securely via PayPal using the link below:</p>
+<p>
+<a href="https://paypal.me/YourPayPalLink" target="_blank">
+https://paypal.me/YourPayPalLink
+</a>
+</p>
+<p class="small-note">
+Replace this link with your real PayPal.me link or PayPal donation URL.
+</p>
+</div>
 
+<div class="donate-method">
+<h3>GoFundMe</h3>
+<p>Support our campaigns through GoFundMe:</p>
+<p>
+<a href="https://gofund.me/YourCampaignLink" target="_blank">
+https://gofund.me/YourCampaignLink
+</a>
+</p>
+<p class="small-note">
+Replace this with your real GoFundMe campaign link.
+</p>
+</div>
 
+<div class="donate-method">
+<h3>Western Union / MoneyGram</h3>
+<p>
+<strong>Receiver Name:</strong> Full Name Here<br>
+<strong>City / Country:</strong> Your City, Your Country<br>
+<strong>Phone:</strong> +000 000 000 000
+</p>
+<p class="small-note">
+Donors should send you the MTCN / Reference Number after payment.
+</p>
+</div>
 
-  <div class="card">
+<div class="donate-method">
+<h3>Card Payments (Stripe or Other)</h3>
+<p>
+If you set up Stripe or another card payment provider,
+you can place your donation link here:
+</p>
+<p>
+<a href="#" target="_blank">Donate securely by card (coming soon)</a>
+</p>
+<p class="small-note">
+Replace <code>#</code> with your real Stripe / payment link when ready.
+</p>
+</div>
+</div>
 
-    <h2>Contact Us</h2>
+<!-- Social Media with your real links -->
+<div class="card" id="socials">
+<h2>Follow Us on Social Media</h2>
+<p>
+Stay connected with the African Youth Humanitarian Association (AYHA)
+across our social media platforms for updates, projects, outreach,
+and volunteer opportunities.
+</p>
 
-    <p>Email: info@ayha.org (or your real email)</p>
+<ul>
+<li><strong>Facebook:</strong>
+<a href="https://www.facebook.com/share/17tUuRzzjs/?mibextid=wwXIfr" target="_blank">
+Visit our Facebook Page
+</a>
+</li>
 
-  </div>
+<li><strong>YouTube:</strong>
+<a href="https://youtube.com/@africayouth2024?si=VWId15UWjY1EnNd-" target="_blank">
+Visit our YouTube Channel
+</a>
+</li>
 
+<li><strong>TikTok:</strong>
+<a href="https://www.tiktok.com/@africayouthshumanitaian?_r=1&_t=ZN-91nchJHDb1y" target="_blank">
+Follow us on TikTok
+</a>
+</li>
+
+<li><strong>Instagram:</strong> <a href="#" target="_blank">Coming soon</a></li>
+<li><strong>Twitter (X):</strong> <a href="#" target="_blank">Coming soon</a></li>
+<li><strong>WhatsApp:</strong> <a href="#" target="_blank">Coming soon</a></li>
+<li><strong>Supfrica:</strong> <a href="#" target="_blank">Coming soon</a></li>
+</ul>
+
+<p class="small-note">
+More platforms will be added as they become available.
+</p>
+</div>
+
+<!-- QR Code section -->
+<div class="card" id="qr">
+<h2>Scan to Visit Our Website</h2>
+<p>
+You can scan this QR code to instantly open the official AYHA website
+on your phone.
+</p>
+
+<!-- Make sure you upload ayha_website_qr.png to this repository -->
+<img src="ayha_website_qr.png"
+alt="AYHA website QR code"
+style="max-width:220px; display:block; margin:auto; border-radius:8px;">
+
+<p style="text-align:center; margin-top:10px;">
+<em>Share this QR code on posters, flyers, social media, outreach events, and campaigns.</em>
+</p>
+</div>
+
+<!-- Membership Application Form -->
+<div class="card" id="membership">
+<h2>Membership Application Form</h2>
+<p>
+Fill in the form below to apply for membership with the African Youth
+Humanitarian Association. We will review your application and contact you
+via email.
+</p>
+
+<!-- Later: replace action="#" with a real form handler (Formspree, etc.) -->
+<form action="#" method="POST">
+<div>
+<label for="full-name">Full Name *</label>
+<input type="text" id="full-name" name="Full Name" required />
+</div>
+
+<div>
+<label for="email">Email Address *</label>
+<input type="email" id="email" name="Email" required />
+</div>
+
+<div>
+<label for="phone">Phone / WhatsApp</label>
+<input type="tel" id="phone" name="Phone" />
+</div>
+
+<div>
+<label for="country">Country *</label>
+<input type="text" id="country" name="Country" required />
+</div>
+
+<div>
+<label for="age-group">Age Group *</label>
+<select id="age-group" name="Age Group" required>
+<option value="">-- Select --</option>
+<option value="15-18">15–18</option>
+<option value="19-24">19–24</option>
+<option value="25-30">25–30</option>
+<option value="31+">31+</option>
+</select>
+</div>
+
+<div>
+<label for="occupation">Occupation / Field of Study</label>
+<input type="text" id="occupation" name="Occupation" />
+</div>
+
+<div>
+<label for="interest">Areas of Interest *</label>
+<textarea
+id="interest"
+name="Areas of Interest"
+placeholder="Example: Youth leadership, education projects, humanitarian outreach..."
+required
+></textarea>
+</div>
+
+<div>
+<label for="experience">Relevant Experience (optional)</label>
+<textarea
+id="experience"
+name="Experience"
+placeholder="Share any volunteering, leadership, or community work experience you have."
+></textarea>
+</div>
+
+<div>
+<label for="motivation">Why do you want to join AYHA? *</label>
+<textarea
+id="motivation"
+name="Motivation"
+required
+></textarea>
+</div>
+
+<div>
+<label>
+<input type="checkbox" name="Agreement" required />
+I confirm that the information provided is accurate, and I agree to
+follow AYHA values and guidelines.
+</label>
+</div>
+
+<button type="submit">Submit Membership Application</button>
+<p class="small-note">
+Note: After you connect this form to a service (such as Formspree or
+Google Forms), submissions will be sent to your email or stored online.
+</p>
+</form>
+</div>
+
+<!-- Membership ID & Verification info -->
+<div class="card" id="verify-info">
+<h2>AYHA Membership ID & Verification</h2>
+<p>
+Each approved AYHA member receives a unique Membership ID (for example:
+<code>AYHA-0001</code>). This ID may be printed on a membership card and
+linked to a QR code or barcode for easy verification.
+</p>
+<p>
+To verify a Membership ID, authorized partners and organizers can use
+our online verification tool:
+</p>
+<p>
+<a href="verify.html"><strong>&rarr; Go to the Membership Verification Page</strong></a>
+</p>
+<p class="small-note">
+The verification system only checks the status of the Membership ID
+(active/inactive/expired). No personal member information is publicly displayed.
+</p>
+</div>
 </body>
-
 </html>
