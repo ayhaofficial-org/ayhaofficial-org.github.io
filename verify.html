@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AYHA Membership Verification</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+max-width: 700px;
+margin: 40px auto;
+padding: 0 20px;
+background: #f7f7f7;
+line-height: 1.6;
+}
+header {
+background: #003366;
+color: white;
+padding: 20px;
+text-align: center;
+border-radius: 8px;
+}
+.card {
+background: white;
+padding: 20px;
+margin-top: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+input[type="text"] {
+width: 100%;
+padding: 8px 10px;
+border-radius: 4px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+font-size: 14px;
+}
+button {
+margin-top: 10px;
+padding: 8px 16px;
+border: none;
+border-radius: 4px;
+background: #003366;
+color: white;
+font-size: 14px;
+cursor: pointer;
+}
+button:hover {
+opacity: 0.9;
+}
+#result {
+margin-top: 15px;
+font-weight: bold;
+}
+.small-note {
+font-size: 12px;
+color: #666;
+}
+a {
+color: #003366;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>AYHA Membership Verification</h1>
+<p>Verify a Membership ID issued by African Youth Humanitarian Association</p>
+</header>
+
+<div class="card">
+<p>
+Enter the AYHA Membership ID (for example: <code>AYHA-0001</code>) and
+click "Check ID" to verify if it is a valid and active membership.
+</p>
+
+<label for="memberIdInput"><strong>Membership ID</strong></label>
+<input type="text" id="memberIdInput" placeholder="AYHA-0001" />
+
+<button type="button" onclick="checkMember()">Check ID</button>
+
+<div id="result"></div>
+
+<p class="small-note">
+This page only checks the validity and status of the Membership ID.
+No personal information about members is displayed.
+</p>
+</div>
+
+<div class="card">
+<h2>Questions or Manual Verification</h2>
+<p>
+If you have any concerns or cannot verify an ID, please contact AYHA
+through our official contact details on the main website.
+</p>
+<p>
+<a href="index.html">&larr; Back to AYHA main website</a>
+</p>
+</div>
+
+<script>
+// INTERNAL LIST OF MEMBER IDs AND STATUS
+// When you approve a new member, add a new line here.
+// Example: "AYHA-0004": "active",
+//
+// Status options:
+// - "active"
+// - "inactive"
+// - "expired"
+
+const members = {
+"AYHA-0001": "active",
+"AYHA-0002": "active",
+"AYHA-0003": "inactive"
+// Add more IDs here as members are approved
+};
+
+function checkMember() {
+const input = document.getElementById('memberIdInput');
+const result = document.getElementById('result');
+
+let id = input.value.trim().toUpperCase();
+
+if (!id) {
+result.style.color = "red";
+result.textContent = "Please enter a Membership ID.";
+return;
+}
+
+if (members[id]) {
+const status = members[id];
+
+if (status === "active") {
+result.style.color = "green";
+result.textContent = "✅ This Membership ID is VALID and ACTIVE.";
+} else if (status === "inactive") {
+result.style.color = "orange";
+result.textContent = "⚠️ This Membership ID exists but is currently INACTIVE.";
+} else if (status === "expired") {
+result.style.color = "red";
+result.textContent = "⚠️ This Membership ID has EXPIRED.";
+} else {
+result.style.color = "black";
+result.textContent = "This Membership ID exists. Status: " + status;
+}
+} else {
+result.style.color = "red";
+result.textContent = "❌ Membership ID not found. Please check the code or contact AYHA.";
+}
+}
+</script>
+</body>
+</html>
